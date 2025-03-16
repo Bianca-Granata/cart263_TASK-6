@@ -59,7 +59,6 @@ function run() {
       const rainbow_tokens = originalRainBowText.split(/[\s\.!\?\n]+/).filter(token => token.length > 0);
       console.log("Fetched text split into array:", rainbow_tokens);
 
-
       runPartC(rainbow_tokens, phrase_as_array);
     }
   }
@@ -99,7 +98,7 @@ function run() {
     console.log("Generated poem sentence:", poem_sentence);
 
     // ONLY RUN runPartD upon success of all sub tasks above
-    runPartD(poem_sentence.trim()); // Trim to remove the trailing space
+    runPartD(poem_sentence.trim());
   }
 
 
